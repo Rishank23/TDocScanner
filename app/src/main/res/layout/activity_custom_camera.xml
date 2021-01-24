@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8">
+
+        <FrameLayout
+            android:id="@+id/camera_preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.rishank_reddy.tdocscanner.DocOverlay
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="5dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.2"
+        android:text="Capture" />
+
+</LinearLayout>
